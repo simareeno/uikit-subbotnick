@@ -1,0 +1,21 @@
+@use '../variables';
+
+$block: '.#{variables.$ns}alert';
+
+#{$block} {
+    &_corners_square {
+        --g-card-border-radius: 0;
+    }
+
+    &__text-content {
+        width: 100%;
+    }
+
+    &__actions_minContent {
+        width: min-content;
+    }
+
+    &__close-btn {
+        flex-shrink: 0;
+    }
+}
